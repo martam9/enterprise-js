@@ -582,4 +582,12 @@ tips.push({
 	]
 });
 
+tips.push({
+    author: 'emjayess',
+    message: 'Always abstract native DOM methods to your own Api and package them as individual code files for maximum portability',
+    example: [
+        'function DocumentDotWrite(s){document.write(s);}'
+    ]
+});
+
 module.exports = tips;
