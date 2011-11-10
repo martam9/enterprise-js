@@ -596,7 +596,7 @@ tips.push({
 	example : [
 		'function doSomethingCool() {',
 		'    // ...Something cool happens...',
-		'    return undefined; // Leave nothing to chance!'
+		'    return undefined; // Leave nothing to chance!',
 		'}'
 	]
 });
