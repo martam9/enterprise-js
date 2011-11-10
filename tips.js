@@ -590,4 +590,15 @@ tips.push({
     ]
 });
 
+tips.push({
+	author : 'keeganwatkins',
+	message : 'Explicitly `return`ing `undefined` <em>just to be sure</em>',
+	example : [
+		'function doSomethingCool() {',
+		'    // ...Something cool happens...',
+		'    return undefined; // Leave nothing to chance!'
+		'}'
+	]
+});
+
 module.exports = tips;
