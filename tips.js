@@ -601,4 +601,18 @@ tips.push({
 	]
 });
 
+tips.push({
+	author : 'keeganwatkins',
+	message : 'Using <em>Arrays</em> as <em>Objects</em>, and <em>vice versa</em>',
+	example : [
+		'var confusedObject = {',
+		'    "0": "foo",',
+		'    "1": "bar"',
+		'};',
+		'var confusedArray = [];',
+		'confusedArray["foo"] = 0;',
+		'confusedArray["bar"] = 1;'
+	]
+})
+
 module.exports = tips;
