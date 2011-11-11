@@ -613,6 +613,6 @@ tips.push({
 		'confusedArray["foo"] = 0;',
 		'confusedArray["bar"] = 1;'
 	]
-})
+});
 
 module.exports = tips;
