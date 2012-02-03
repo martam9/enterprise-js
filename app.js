@@ -22,17 +22,13 @@ var tips = require(__dirname + '/tips');
 // Make 'em sexy
 tips.forEach(function (tip) {
   if (tip.example) {
-    // Wrap it in script tags to trigger JavaScript highlighting...sigh
-    tip.example = hl('<script>\n' + tip.example.join('\n') + '\n</script>');
-    // Unwrap (hax)
-    tip.example = tip.example.replace('<span class="tag">&lt;<span class="keyword">script</span>&gt;</span><span class="javascript">', '');
-    tip.example = tip.example.replace('</span><span class="tag">&lt;/<span class="keyword">script</span>&gt;</span>', '');
+    tip.example = hl(tip.example.join('\n'));
   }
 });
 
 // Utilities
 function showTip (req, res, index) {
-  res.render('index.jade', {
+  res.render('index', {
     locals: {
       tip: tips[index - 1],
       color: colors[Math.floor(Math.random() * colors.length)],
