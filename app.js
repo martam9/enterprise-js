@@ -1,3 +1,5 @@
+process.chdir(__dirname);
+
 var express = require('express'),
     hl = require("highlight").Highlight,
     io = require('socket.io');
